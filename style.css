@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
   }
 
   .logo{
@@ -87,6 +88,53 @@
   .nav-icon{
     display: none;
   }
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner-content{
+    width: 580px;
+    
+  }
+
+  .banner-img{
+    width: 400px;
+    
+    height: 500px;
+
+  }
+  .inner-img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-title{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+  }
+
+  .banner-des{
+    font-size: 1rem;
+    color: var(--bg-back);
+    margin-top: 15px;
+
+  }
+
+  .btn-secondary{
+    background-color: var(--bg-back);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    margin-top: 15px;
+  }
+
 
 
 
@@ -113,6 +161,17 @@
         width: 30px;
         
 
+    }
+
+    .banner{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5px;
+    }
+    .banner-content {
+      width: 100%;
     }
     
   }
