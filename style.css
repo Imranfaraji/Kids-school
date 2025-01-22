@@ -153,6 +153,7 @@
   background-image: url(assets/bg.png);
   
   background-position: center;
+  background-size: cover;
   
   
 }
@@ -357,7 +358,7 @@
 
  .story-btn{
   margin-top: 80px;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
  }
 
  .btn-color1{
@@ -368,6 +369,78 @@
  }
  .btn-color3{
    background-color: var(--bg-skyblue-light);
+ }
+ .our-stories{
+  overflow: hidden;
+ }
+
+ .footer{
+  width: 100%;
+  background-color: #474b40;
+  overflow: hidden;
+ }
+ .footer-section{
+  width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  
+ }
+ .footer-box1, .footer-box2, .footer-box3{
+  width: 350px;
+  padding: 20px;
+ }
+ .box1-content{
+  display: flex;
+  gap: 20px;
+ }
+ .footer-logo{
+  width: 80px;
+  height: 80px;
+ }
+ .footer-box1-title{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+ }
+
+ .box1-des{
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-top: 50px;
+ }
+ .footer-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+ }
+ .footer-ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ }
+ .footer-link{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+ }
+ .footer-icon> img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+ }
+
+ .marquee{
+  height: 30px;
+  border: none;
+  background-color: var(--bg-skyblue);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 30px;
+  
+  
  }
  
 
@@ -467,6 +540,13 @@
     }
     .stories-title{
       font-size: 1.5rem;
+    }
+
+    .footer-section{
+      flex-direction: column;
+      padding: 10px;
+      width: 100%;
+
     }
     
     
