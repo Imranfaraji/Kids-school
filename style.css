@@ -288,7 +288,7 @@
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   
 }
@@ -297,7 +297,8 @@
 
 .stories-body{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  
   
   
   gap: 18px;
@@ -306,6 +307,7 @@
   display: grid;
   grid-template-columns: 250px 250px;
   gap: 18px;
+  
 }
 
 #first-card{
@@ -358,6 +360,17 @@
   margin-bottom: 80px;
  }
 
+ .btn-color1{
+   background-color: var(--bg-skyblue);
+ }
+ .btn-color2{
+   background-color: var(--bg-blue);
+ }
+ .btn-color3{
+   background-color: var(--bg-skyblue-light);
+ }
+ 
+
 
 
   
@@ -408,7 +421,7 @@
       width: 80%;
     }
     .inner-img{
-      width: 80%;
+      width: 90%;
     }
 
     .curriculum{
@@ -430,12 +443,31 @@
       display: none;
     }
 
-    .stories-body{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
+    .our-stories{
+      background-size: cover;
+      padding: 20px;
     }
     .story-section{
-      width: 80%;
+      width: 100%;
+      padding: 10px;
     }
+    .stories-body{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .second-card{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .second-card>*{
+      margin: 0 auto;
+    }
+    .stories-card{
+      width: 100%;
+    }
+    .stories-title{
+      font-size: 1.5rem;
+    }
+    
     
   }
